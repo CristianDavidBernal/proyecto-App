@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/order3"
+        android:layout_marginTop="64dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@color/white"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"/>
+
+
+
+</LinearLayout>
+

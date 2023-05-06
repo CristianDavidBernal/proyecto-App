@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/order3"
+        tools:srcCompat="@tools:sample/avatars"
+
+        />
+
+    <TextView
+        android:id="@+id/tvCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvClientNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Name:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvCliente"
+        app:layout_constraintEnd_toStartOf="@+id/tvCliente"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#A82196F3"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvCliente"
+        app:layout_constraintTop_toBottomOf="@+id/tvCliente" />
+
+    <TextView
+        android:id="@+id/tvidtNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Order:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvid"
+        app:layout_constraintEnd_toStartOf="@+id/tvid"
+        android:layout_marginEnd="45dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvNameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#A82196F3"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvid"
+        app:layout_constraintTop_toBottomOf="@+id/tvid" />
+
+    <TextView
+        android:id="@+id/tvnameitemNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name:"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvNameItem"
+        app:layout_constraintEnd_toStartOf="@+id/tvNameItem"
+        android:layout_marginEnd="23dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#efefef"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
